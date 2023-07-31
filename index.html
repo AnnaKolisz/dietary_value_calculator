@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary value calculator</title>
+</head>
+
+<body>
+    <main class="ctn">
+        <form>
+            <label for="calories">Calories per 100g</label>
+            <input type="number" name="calories" id="calories">
+            <label for="fats">Fats per 100g</label>
+            <input type="number" name="fats" id="fats">
+            <label for="carbo">Carbohydrates per 100g</label>
+            <input type="number" name="carbo" id="carbo">
+            <label for="proteins">Proteins per 100g</label>
+            <input type="number" name="proteins" id="proteins">
+
+            <label for="grams">Grams</label>
+            <input type="number" name="grams" id="grams">
+
+
+        </form>
+        <button id="btn" type="submit" >Count</button>
+        <button id="clear" type="button" >clear</button>
+        <dl>
+            <h3> Value</h3>
+            <dt>Calories</dt>
+            <dd id="calVl"></dd>
+            <dt>Fats</dt>
+            <dd id="fatVl"></dd>
+            <dt>Carbohydrates</dt>
+            <dd id="carboVl"></dd>
+            <dt>Proteins</dt>
+            <dd id="proVl"></dd>
+          </dl>
+    </main>
+<script src="app.js" ></script>
+</body>
+
+</html>
