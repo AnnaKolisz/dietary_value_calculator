@@ -5,29 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dietary value calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main class="ctn">
-        <form>
-            <label for="calories">Calories per 100g</label>
-            <input type="number" name="calories" id="calories">
-            <label for="fats">Fats per 100g</label>
+        <h2> Dietary value calculator</h2>
+        <form class="ctn-form">
+            <p>Value in 100g</p>
+            <label for="calories">Calories</label>
+            <input type="number" name="calories" id="calories" >
+            <label for="fats">Fats</label>
             <input type="number" name="fats" id="fats">
-            <label for="carbo">Carbohydrates per 100g</label>
+            <label for="carbo">Carbohydrates</label>
             <input type="number" name="carbo" id="carbo">
-            <label for="proteins">Proteins per 100g</label>
+            <label for="proteins">Proteins </label>
             <input type="number" name="proteins" id="proteins">
-
+            <p>Value in actual grams</p>
             <label for="grams">Grams</label>
             <input type="number" name="grams" id="grams">
 
 
         </form>
-        <button id="btn" type="submit" >Count</button>
-        <button id="clear" type="button" >clear</button>
+        <div class="buttons">
+            <button id="btn" type="submit" class="submit">Count</button>
+            <button id="clear" type="button"  class="clear" >Clear</button>
+
+        </div>
+        <h3> Value</h3>
         <dl>
-            <h3> Value</h3>
             <dt>Calories</dt>
             <dd id="calVl"></dd>
             <dt>Fats</dt>
