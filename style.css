@@ -19,10 +19,11 @@ body {
     font-family: "Red Hat Text", sans-serif;
     background-color: var(--lapis-lazuli);
     color: var(--white-smoke);
+    margin: 0;
 }
 
 .ctn {
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem;
     width: 360px;
     margin: 0 auto;
 }
@@ -95,6 +96,14 @@ input::-webkit-inner-spin-button {
     border: var(--orange);
 }
 
+hr{
+    width: 100%;
+    margin-bottom: 18px;;
+}
+h3{
+    margin-left: 2rem;
+    margin-bottom: 0;;
+}
 dl {
     display: flex;
     flex-flow: row wrap;
@@ -107,4 +116,5 @@ dt {
 dd {
     flex: 0 0 45%;
     border-bottom: 1px solid var(--white-smoke);
+    margin: 0;
 }

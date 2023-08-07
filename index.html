@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dietary value calculator</title>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main class="ctn">
         <h2> Dietary value calculator</h2>
-        <form class="ctn-form">
-            <p>Value in 100g</p>
+        <form class="ctn-form" id="formm">
+            <label for="grams-from">Grams From</label>
+            <input type="number" name="grams-from" id="grams-from" value="100" >
             <label for="calories">Calories</label>
             <input type="number" name="calories" id="calories" >
             <label for="fats">Fats</label>
@@ -21,8 +23,8 @@
             <input type="number" name="carbo" id="carbo">
             <label for="proteins">Proteins </label>
             <input type="number" name="proteins" id="proteins">
-            <p>Value in actual grams</p>
-            <label for="grams">Grams</label>
+            <hr>
+            <label for="grams">Grams To</label>
             <input type="number" name="grams" id="grams">
 
 
